@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+      <referenceBlock name="quick.dev.maintabs">
+        <block class="ADM\QuickDevBar\Block\Tab\Wrapper" name="qdb.tab.new.tab" before="qdb.tab.help" template="tabs.phtml">
+            <action method="setTitle">
+              <argument name="title" xsi:type="string">New</argument>
+            </action> 
+            <block class="ADM\QuickDevBar\Block\Tab\Panel" name="qdb.tab.new.lorem.subtab" after="-" template="BrandNew_QuikDevSample::subtab/lorem.phtml">
+                <action method="setTitle">
+                  <argument name="title" xsi:type="string">New Sub Tab</argument>
+                </action>                    
+            </block>                    
+        </block>   
+      </referenceBlock>
+    
+      <referenceBlock name="qdb.tab.info">
+        <block class="ADM\QuickDevBar\Block\Tab\Panel" name="qdb.tab.info.lorem.subtab" after="-" template="BrandNew_QuikDevSample::subtab/lorem.phtml">
+            <action method="setTitle">
+              <argument name="title" xsi:type="string">New Sub Tab</argument>
+            </action>                    
+        </block>      
+      </referenceBlock>
+    </body>
+</page>

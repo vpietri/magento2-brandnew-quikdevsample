@@ -1,0 +1,21 @@
+{
+    "name": "vpietri/brandnew_quikdevsample",
+    "description": "BrandNew_QuikDevSample is a sample extension for ADM_QuickDevBar",
+    "type": "magento2-module",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Vincent Pietri",
+            "homepage": "http://www.vincent-pietri.fr/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BrandNew\\QuikDevSample\\": ""
+        }
+    }
+}
